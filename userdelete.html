@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>User List</title>
+    <title>User Delete</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/userservice.js"></script>
-    <script src="js/userlist.js"></script>
+    <script src="js/userdelete.js"></script>
 </head>
 <body>
+    <button id="btnGetAll">Get Users</button>
     <table style="width:100%;">
         <tr> 
             <th>Id</th>
@@ -18,8 +19,12 @@
             <th>isReviewer</th>
             <th>isAdmin</th>
         </tr>
-        <tbody id="tbody"></tbody>
+        <tbody id="dbody"></tbody>
     </table>
-    <button onclick="getUsers();">Get Users</button>
+        
+    <table>
+        <tr><td>User Id #:<input id="delid" type="number" value="0"></td></tr>
+    </table>
+    <button id="btnDelete">Delete</button>
 </body>
 </html>

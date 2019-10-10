@@ -7,6 +7,8 @@ function refresh(users) {
         tr += `<td>${user.username}</td>`
         tr += `<td>${user.firstname}</td>`
         tr += `<td>${user.lastname}</td>`
+        tr += `<td>${user.phone}</td>`
+        tr += `<td>${user.email}</td>`
         tr += `<td>${user.isReviewer ? "Yes" : "No"}</td>`
         tr += `<td>${user.isAdmin ? "Yes" : "No"}</td>`
         tr += "</tr>";
@@ -14,5 +16,6 @@ function refresh(users) {
     }
 }
 const getUsers = () => {
-    userlist();
+    UserService.list()
+        .done( (res) => refresh(res) );
 }

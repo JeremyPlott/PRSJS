@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Insert</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/userservice.js"></script>
+    <script src="js/userdetail.js"></script>
+    <script src="js/userupdate.js"></script>
+</head>
+<body>
+    <label> Id:</label>
+    <input id="xid" type="number" value="1">    
+    <button id="btnGet">Get user</button>
+    <br><br>
+    <table>
+        <tr><td>User id:<input id="pid" type="text" readonly></td></tr>
+        <tr><td>Username:<input id="pusername" type="text"></td></tr>
+        <tr><td>Password:<input id="ppassword" type="password"></td></tr>
+        <tr><td>First name:<input id="pfirstname" type="text"></td></tr>
+        <tr><td>Last name:<input id="plastname" type="text"></td></tr>
+        <tr><td>Phone:<input id="pphone" type="text"></td></tr>
+        <tr><td>Email:<input id="pemail" type="text"></td></tr>
+        <tr><td>Reviewer?:<input id="previewer" type="checkbox"></td></tr>
+        <tr><td>Admin?:<input id="padmin" type="checkbox"></td></tr>
+    </table>
+    <button id="btnSave">Save</button>
+</body>
+</html>
